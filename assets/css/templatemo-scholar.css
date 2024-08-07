@@ -1949,6 +1949,8 @@ body {
     right: 15px;
   }
   .contact-us .contact-us-content {
+    margin-top: 50px;
+    margin-bottom: -50px;
     padding: 30px;
   }
   footer {
