@@ -106,12 +106,12 @@ nav .hamburger span {
 
 .carousel .list .item .title{
     padding-top: 80px;
-    font-size: 30px;
+    font-size: 16px;
     font-weight: bold;
     line-height: 1.3em;
 }
 .carousel .list .item .topic{
-    font-size: 80px;
+    font-size: 40px;
     font-weight: bold;
     line-height: 1.3em;
 }
