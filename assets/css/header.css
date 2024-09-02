@@ -86,6 +86,12 @@ nav .hamburger span {
     object-fit: cover;
     
 }
+.carousel .list .item img {
+
+    filter: brightness(50%); /* Reduce el brillo al 50% para oscurecer la imagen */
+    transition: filter 0.3s ease; /* Transición suave para efectos hover */
+  }
+  
 
 .carousel .list .item .content{
     position: absolute;
@@ -143,38 +149,55 @@ nav .hamburger span {
   
 }
 
-.carousel .list .item .buttons button{
-    border: none;
-    margin-right: 5px;
-    background-color: #14394A;
-    color: white;
-    letter-spacing: 3px;
-    
-    font-weight: 500;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Añadir sombra */
-}
-
-.carousel .list .item .buttons button:hover{
-    background-color: #B2D6D9; /* Color de fondo más oscuro para el hover */
-    color: black;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada al hacer hover */
-    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
-    transition: all 0.3s ease; /* Transición suave para el cambio */
-}
-.carousel .list .item .buttons button:nth-child(2){
-    background-color: #25D366; /* Color de fondo de WhatsApp */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Añadir sombra */
-    color: white;
-}
-
-.carousel .list .item .buttons button:nth-child(2):hover {
-    background-color: #057939; /* Color de fondo más oscuro para el hover */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada al hacer hover */
-    color: #F1F1F1; /* Color de texto ligeramente más claro */
-    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
-    transition: all 0.3s ease; /* Transición suave para el cambio */
-}
+/* Estilo base para los enlaces que se usan como botones */
+.buttons a {
+    display: inline-block; /* Permite aplicar padding y otros estilos como un botón */
+   padding-top: 3px;
+    font-size: 16px; /* Tamaño de fuente uniforme */
+    text-align: center; /* Centra el texto dentro del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    width: 100px; /* Ancho fijo para ambos botones */
+    margin: 5px; /* Espacio entre botones */
+    cursor: pointer; /* Cambio de cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el efecto hover */
+  }
+  
+  /* Botón de Contacto */
+  .btn-contact {
+    background-color: #14394A; /* Color de fondo */
+    color: white; /* Color del texto */
+  }
+  
+  /* Hover del Botón de Contacto */
+  .btn-contact:hover {
+    color: rgb(0, 0, 0);
+    background-color: #e2e2e2; /* Color de fondo al pasar el mouse */
+  }
+  
+  /* Botón de Ver Más */
+  .btn-view-more {
+    background-color: #FCB59F; /* Color de fondo */
+    color: white; /* Color del texto */
+  }
+  
+  /* Hover del Botón de Ver Más */
+  .btn-view-more:hover {
+    color: rgb(0, 0, 0);
+    background-color: #f7dad1; /* Color de fondo al pasar el mouse */
+  }
+    /* Botón de Ver Más */
+    .btn-view-whatsapp {
+        background-color: #73e279; /* Color de fondo */
+        color: white; /* Color del texto */
+      }
+      
+      /* Hover del Botón de Ver Más */
+      .btn-view-whatsapp:hover {
+        
+        background-color: #5ea351; /* Color de fondo al pasar el mouse */
+      }
+  
 /* thumbail */
 .thumbnail{
     cursor: pointer;

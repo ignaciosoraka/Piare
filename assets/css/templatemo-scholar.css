@@ -1075,7 +1075,22 @@ Courses Style
   justify-content: center;
   align-items: center;
 } 
+.down-content {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos de arriba a abajo */
+  justify-content: space-between; /* Distribuye espacio adicional de manera uniforme */
+  height: 150px; /* Establece una altura fija, ajústala según tus necesidades */
 
+  
+}
+.down-content h6 {
+  font-size: 13px;
+  flex: 1; /* Hace que el <h6> ocupe todo el espacio disponible dentro de .down-content */
+  display: flex; /* Permite el uso de propiedades flex dentro del <h6> */
+  align-items: center; /* Centra el texto verticalmente */
+  justify-content: center; /* Centra el texto horizontalmente */
+  
+}
 .events_item .down-content {
   padding: 20px 30px 25px 30px;
 }
